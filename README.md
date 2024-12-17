@@ -74,8 +74,8 @@
 Логи должны писаться в файл hippodrome.log, который должен располагаться в корне проекта в папке logs. Каждый день файл должен переименовываться по шаблону в hippodrome.2021-12-31.log и вместо него должен создаваться новый hippodrome.log. Для этого используй аппендер RollingFile. При этом файлы старше 7 дней, должны удаляться. Для этого можешь использовать конструкцию вида:
 
 @<DefaultRolloverStrategy>
-    <Delete …>
-        <IfFileName …/>
-        <IfLastModified …/>
-    </Delete>
+@    <Delete …>
+@        <IfFileName …/>
+@        <IfLastModified …/>
+@    </Delete>
 @</DefaultRolloverStrategy>
